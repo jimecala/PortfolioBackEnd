@@ -27,7 +27,7 @@ public class SkillsController {
     public void addSkill (@RequestBody Skills skl){
         sklServ.newSkill(skl);
 }
-    @DeleteMapping ("/delete/{id}")
+    @DeleteMapping ("/delete/skill/{id}")
     public void deleteSkill (@PathVariable Long id){
         sklServ.deleteSkill(id);
     }

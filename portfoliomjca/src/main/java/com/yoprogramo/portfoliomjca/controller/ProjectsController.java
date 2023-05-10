@@ -26,7 +26,7 @@ public class ProjectsController {
         projServ.addProject(proj);
     }
     
-    @DeleteMapping("/delete/project")
+    @DeleteMapping("/delete/project/{id}")
     public void deleteProject (Long id){
         projServ.deleteProject(id);
     }

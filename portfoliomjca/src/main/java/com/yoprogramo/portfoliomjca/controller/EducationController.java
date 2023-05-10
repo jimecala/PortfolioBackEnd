@@ -29,7 +29,7 @@ public class EducationController {
        eduServ.newEducation(edu);
     }
         
-    @DeleteMapping ("/delete/{id}")
+    @DeleteMapping ("/delete/education/{id}")
     public void deleteEducation(@PathVariable Long id) {
         eduServ.deleteEducation(id);
     }

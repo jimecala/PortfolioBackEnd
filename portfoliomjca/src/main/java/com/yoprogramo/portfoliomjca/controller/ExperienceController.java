@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ExperienceController {
+    
     @Autowired
     IExperienceService expServ;
     
@@ -28,7 +29,7 @@ public class ExperienceController {
        expServ.newExperience(per);
     }
         
-    @DeleteMapping ("/delete/{id}")
+    @DeleteMapping ("/delete/experience/{id}")
     public void deleteExperience(@PathVariable Long id) {
         expServ.deleteExperience(id);
     }
