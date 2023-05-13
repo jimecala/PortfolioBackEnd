@@ -17,16 +17,24 @@ public class Persona implements Serializable{
     private Long id;
     
     private String name;
-    private String lastname;
+    private String position;
+    private String introduction;
+    private String img;
+    private String email;
 
     public Persona() {    }
 
-    
-    public Persona(Long id, String name, String lastname) {
+    public Persona(Long id, String name, String position, String introduction, String img, String email) {
         this.id = id;
         this.name = name;
-        this.lastname = lastname;
+        this.position = position;
+        this.introduction = introduction;
+        this.img = img;
+        this.email = email;
     }
+
+    
+    
     
 }
 
