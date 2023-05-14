@@ -13,18 +13,28 @@ public class SkillsService implements ISkillsService {
     public SkillsRepository sklRepo;
 
     @Override
-    public List<Skills> showSkills() {
-        return sklRepo.findAll();
-    }
-
-    @Override
     public void newSkill(Skills skl) {
+        sklRepo.save(skl);
+    }
+    
+    @Override
+    public void editSkill(Skills skl) {
         sklRepo.save(skl);
     }
 
     @Override
     public void deleteSkill(Long id) {
         sklRepo.deleteById(id);
+    }
+
+    @Override
+    public List<Skills> showSkills() {
+        return sklRepo.findAll();
+    }
+
+    @Override
+    public Skills searchSkill(Long id) {
+        return sklRepo.findById(id).orElse(null);
     }
     
 }

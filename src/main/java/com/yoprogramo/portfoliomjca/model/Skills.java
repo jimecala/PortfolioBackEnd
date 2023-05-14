@@ -11,11 +11,12 @@ import lombok.Setter;
 @Entity
 @Getter @Setter
 public class Skills implements Serializable {
+    
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;
     
-    private String type;
+    private String nombre;
     private String skillLevel;
 
     public Skills() {
@@ -23,7 +24,7 @@ public class Skills implements Serializable {
 
     public Skills(Long id, String type, String level) {
         this.id = id;
-        this.type = type;
+        this.nombre = type;
         this.skillLevel = level;
     }
     

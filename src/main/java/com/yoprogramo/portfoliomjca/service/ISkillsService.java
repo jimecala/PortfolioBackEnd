@@ -6,10 +6,13 @@ import java.util.List;
 
 public interface ISkillsService {
     
-    public List<Skills> showSkills();
-    
     public void newSkill (Skills skl);
+    
+    public void editSkill (Skills skl);
     
     public void deleteSkill (Long id);
     
+    public List<Skills> showSkills();
+    
+    public Skills searchSkill (Long id);
 }
