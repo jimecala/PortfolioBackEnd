@@ -28,6 +28,16 @@ public class PersonaService implements IPersonaService {
     }
     
     @Override
+    public Persona getPersona() {
+        List<Persona> list = persoRepo.findAll();
+        if (!list.isEmpty()){
+            return list.get(0);
+        }else{
+            return null;
+        }        
+    }
+    
+    @Override
     public List<Persona> showPersonas() {
         return persoRepo.findAll();
     }
@@ -36,5 +46,6 @@ public class PersonaService implements IPersonaService {
     public Persona searchPersona(Long id) {
         return persoRepo.findById(id).orElse(null);
     }
+    
 
 }
