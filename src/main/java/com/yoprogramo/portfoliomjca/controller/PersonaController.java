@@ -11,34 +11,33 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "/api/datos-personales")
+//@RequestMapping(path = "/api/datos-personales")
 @CrossOrigin(origins = "https://portfoliomjca.onrender.com")
 public class PersonaController {
     
     @Autowired
     IPersonaService persoServ;
       
-    @PostMapping ("/new")
+    @PostMapping ("/api/datos-personales/new")
     public void addPersona (@RequestBody Persona per) {
        persoServ.newPersona(per);
     }
     
-    @PutMapping ("/edit")
+    @PutMapping ("/api/datos-personales/edit")
     public void edit(@RequestBody Persona per){
         persoServ.editPersona(per);
     }
         
-    @DeleteMapping ("/delete/{id}")
+    @DeleteMapping ("/api/datos-personales/delete/{id}")
     public void deletePersona(@PathVariable Long id) {
         persoServ.deletePersona(id);
     }
     
-    @GetMapping ("/show")
+    @GetMapping ("/api/datos-personales/show")
     @ResponseBody
     public List<Persona> showPersonas () {
         return persoServ.showPersonas();
