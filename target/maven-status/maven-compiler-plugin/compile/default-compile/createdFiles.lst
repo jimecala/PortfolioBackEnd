@@ -24,3 +24,4 @@ com\yoprogramo\portfoliomjca\controller\ExperienceController.class
 com\yoprogramo\portfoliomjca\service\SkillsService.class
 com\yoprogramo\portfoliomjca\PortfoliomjcaApplication.class
 com\yoprogramo\portfoliomjca\controller\ProjectsController.class
+com\yoprogramo\portfoliomjca\WebConfig.class
