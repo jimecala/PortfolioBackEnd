@@ -26,6 +26,16 @@ public class SkillsService implements ISkillsService {
     public void deleteSkill(Long id) {
         sklRepo.deleteById(id);
     }
+    
+    @Override
+    public Skills getSkill() {
+        List<Skills> list = sklRepo.findAll();
+        if (!list.isEmpty()){
+            return list.get(0);
+        }else{
+            return null;
+        }        
+    }
 
     @Override
     public List<Skills> showSkills() {

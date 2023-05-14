@@ -38,7 +38,7 @@ public class SkillsController {
         sklServ.deleteSkill(id);
     }
     
-    @GetMapping
+    @GetMapping //("/show")
     @ResponseBody
     public List<Skills> showSkills () {
         return sklServ.showSkills();

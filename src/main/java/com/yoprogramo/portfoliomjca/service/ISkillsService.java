@@ -3,7 +3,6 @@ package com.yoprogramo.portfoliomjca.service;
 import com.yoprogramo.portfoliomjca.model.Skills;
 import java.util.List;
 
-
 public interface ISkillsService {
     
     public void newSkill (Skills skl);
@@ -11,6 +10,8 @@ public interface ISkillsService {
     public void editSkill (Skills skl);
     
     public void deleteSkill (Long id);
+    
+    public Skills getSkill();
     
     public List<Skills> showSkills();
     
