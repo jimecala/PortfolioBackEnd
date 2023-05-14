@@ -16,16 +16,17 @@ public class Skills implements Serializable {
     @GeneratedValue (strategy = GenerationType.AUTO)
     private Long id;
     
-    private String nombre;
+    private String name;
     private String skillLevel;
 
-    public Skills() {
+    public Skills() {    }
+
+    public Skills(Long id, String name, String skillLevel) {
+        this.id = id;
+        this.name = name;
+        this.skillLevel = skillLevel;
     }
 
-    public Skills(Long id, String type, String level) {
-        this.id = id;
-        this.nombre = type;
-        this.skillLevel = level;
-    }
+    
     
 }
