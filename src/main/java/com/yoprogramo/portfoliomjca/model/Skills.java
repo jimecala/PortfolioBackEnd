@@ -17,11 +17,11 @@ public class Skills implements Serializable {
     private Long id;
     
     private String name;
-    private String skillLevel;
+    private Integer skillLevel;
 
     public Skills() {    }
 
-    public Skills(Long id, String name, String skillLevel) {
+    public Skills(Long id, String name, Integer skillLevel) {
         this.id = id;
         this.name = name;
         this.skillLevel = skillLevel;
