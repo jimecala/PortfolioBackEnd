@@ -21,8 +21,7 @@ public class Skills implements Serializable {
 
     public Skills() {    }
 
-    public Skills(Long id, String name, Integer skillLevel) {
-        this.id = id;
+    public Skills(String name, Integer skillLevel) {
         this.name = name;
         this.skillLevel = skillLevel;
     }
