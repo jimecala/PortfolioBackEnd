@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.yoprogramo</groupId>
-	<artifactId>portfoliomjca</artifactId>
+	<artifactId>BEmjca</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>portfoliomjca</name>
+	<name>BEmjca</name>
 	<description>Proyecto Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -58,6 +58,11 @@
 	  <artifactId>spring-boot-starter-data-jpa</artifactId>
 	  <version>2.3.9.RELEASE</version>
 	  <type>module</type>
+	 </dependency>
+	 <dependency>
+	  <groupId>org.apache.commons</groupId>
+	  <artifactId>commons-lang3</artifactId>
+	  <version>3.12.0</version>
 	 </dependency>
 	</dependencies>
 
