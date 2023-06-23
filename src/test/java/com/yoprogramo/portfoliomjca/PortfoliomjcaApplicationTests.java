@@ -1,10 +1,10 @@
-package com.yoprogramo.portfoliomjca;
+package com.yoprogramo.be_mjca;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PortfoliomjcaApplicationTests {
+class Be_mjcaApplicationTests {
 
 	@Test
 	void contextLoads() {
